@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-LHD-v2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        .smaller-image {
+            width: 100%;
+        }
+        h4 {
+            position: absolute;
+            top: 3.7ch;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-top: 0;
+            font-size: 14px;
+            color: black;
+            font-family: "M PLUS 1", sans-serif;
+            font-weight: 510;
+        }
+        h2 {
+            position: absolute;
+            top: 5.1ch;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-top: 0;
+            font-size: 40px;
+            color: black;
+            font-family: "M PLUS 1", sans-serif;
+            font-weight: 550;
+        }
+        h3 {
+            position: absolute;
+            top: 11.6ch;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-top: 0;
+            font-size: 24px;
+            color: black;
+            font-family: "M PLUS 1", sans-serif;
+            font-weight: 480;
+        }
+        h5 {
+            position: absolute;
+            top: 24ch;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-top: 0;
+            font-size: 14px;
+            color: black;
+            font-family: "M PLUS 1", sans-serif;
+            font-weight: 350;
+        }
+        .button-container {
+            position: absolute;
+            top: 83%;
+            left: 41%;
+            transform: translate(-50%, -50%);
+        }
+        .button-container2 {
+            position: absolute;
+            top: 83%;
+            left: 61%;
+            transform: translate(-50%, -50%);
+        }
+        .order-button {
+            background-color:white;
+            color: black;
+            padding: 12px 95px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "M PLUS 1", sans-serif;
+        }
+        .demo-button {
+            background-color:#171A20;
+            color: white;
+            padding: 12px 95px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "M PLUS 1", sans-serif;
+        }
+        .demo-button:hover {background-color: #555555;}
+        .demo-button{ transition-delay: 0.1s;
+        }
+        .dropdown {
+            position: absolute;
+            top: 7.5ch;
+            left: 650px;
+            transform: translate(-50%, -50%);
+            display: none;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 10px;
+            z-index: 1;
+        }
+        .dropdown-item {
+            padding: 5px;
+            cursor: pointer;
+            font-family: "M PLUS 1", sans-serif;
+            font-weight: 350;
+        }
+        .dropdown-item:hover {
+            background-color: #f1f1f1;
+        }
+        .vehicles:hover .dropdown {
+            display: block;
+        }
+        p {
+            font-family: "M PLUS 1", sans-serif ;
+        }
+    </style>
+<body>
+    <div class="image-container">
+        <a href="https://www.tesla.com/"><img src="./logo.svg" style="height: 55px; width: 120px; position: absolute; top: 0px; left: 47px;"></a>
+        <img src="./support.svg" style="height: 24px; width: 290px; position: absolute; top: 16px; left: 1060px;">
+        <img src="./browser.svg" style="height: 24px; width: 290px; position: absolute; top: 16px; left: 1100px;">
+        <img src="./signin.svg" style="height: 24px; width: 290px; position: absolute; top: 16px; left: 1140px;">
+        <div class="vehicles">
+            <h4>
+                Vehicles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Energy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charging&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discover&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shop
+            </h4>
+            <div class="dropdown">
+                <a href="#" class="dropdown-item">Model S</a>
+                <a href="#" class="dropdown-item">Model 3</a>
+                <a href="#" class="dropdown-item">Model X</a>
+                <a href="#" class="dropdown-item">Model Y</a>
+                <a href="#" class="dropdown-item">Cybertruck</a>
+                <a href="#" class="dropdown-item">Roadster</a>
+            </div>
+        </div>
+        <h2>
+            Model 3
+        </h2>
+        <h3>
+            Long Range AWD From $34,490<sup>1</sup>
+        </h3>
+        <h5>
+            After <u>$13,000 Est. Savings for VA</u>
+        </h5>
+    </div>
+    <div class="background2-container">
+        <div class="button-container">
+            <a href="https://www.tesla.com/model3/design#overview" class="order-button">Order Now</a>
+        </div>
+        <div class="button-container2">
+            <a href="https://www.tesla.com/drive?selectedModel=Model3" class="demo-button">Demo Drive</a>
+        </div>
+    </div>
+    <div style="background-size: cover; background-image: url(teslay.avif); height: 100vh;">
+        <center style="padding-top: 100px;">
+            <p style="width: 500px; font-style: 1; font-size: 40px; margin: 0%; font-weight: 550;">
+                Model Y
+            </p>
+            <p style="width: 500px; margin: 0%; font-size: 24px; font-weight: 480;"> From $335/mo<sup>2</sup></p>
+            <p style="width: 500px; margin: 0.5%; font-size: 14px; font-weight: 350; "> After <u>$114/mo Est. Savings for VA</u></p>
+        </center>
+    </div>
+    <div style="background-size: cover; background-image: url(modelx.avif); height: 100vh;">
+        <center style="padding-top: 100px;">
+            <p style="width: 500px; font-style: 1; font-size: 40px; margin: 0%; font-weight: 550;">
+                Model X
+            </p>
+            <p style="width: 500px; margin: 0%; font-size: 24px; font-weight: 480;"> From $63,990<sup>3</sup></p>
+            <p style="width: 500px; margin: 0.5%; font-size: 14px; font-weight: 350; "> After <u> $14,000 Est. Savings for VA</u></p>
+        </center>
+    </div>
+    <div style="background-size: cover; background-image: url(models.avif); height: 100vh;">
+        <center style="padding-top: 100px;">
+            <p style="width: 500px; font-style: 1; font-size: 40px; margin: 0%; font-weight: 550; color: white;">
+                Model S
+            </p>
+            <p style="width: 500px; margin: 0%; font-size: 24px; font-weight: 480;color: white"> From $66,490<sup>4</sup></p>
+            <p style="width: 500px; margin: 0.5%; font-size: 14px; font-weight: 350;color: white "> After <u>$6,500 Est. Savings for VA</u></p>
+        </center>
+    </div>
+    <div style="background-size: cover; background-image: url(cyber.avif); height: 100vh; position: relative;">
+        <img src="tesla.svg" style="height: 200px; width: 500px; position: absolute; top: 23.5%; left: 50%; transform: translateX(-50%);">
+    </div>
+    
+    <div style="background-size: cover; background-image: url(solar.avif); height: 100vh;">
+        <center style="padding-top: 100px;">
+            <p style="width: 500px; font-style: 1; font-size: 40px; margin: 0%; font-weight: 550;color: white;">
+                Solar Panels
+            
+            <p style="width: 500px; margin: 0.5%; font-size: 14px; font-weight: 350;color: white; "><u>Schedule a Virtual Consultation</u></p>
+        </center>
+    </div>
+
+    <div style="background-size: cover; background-image: url(roof.avif); height: 100vh;">
+        <center style="padding-top: 100px;">
+            <p style="width: 500px; font-style: 1; font-size: 40px; margin: 0%; font-weight: 550;">
+                Solar Roof
+            
+            <p style="width: 500px; margin: 0.5%; font-size: 14px; font-weight: 350;">
+                Produce Clean Energy From Your Roof</p>
+        </center>
+    </div>
+
+    <div style="background-size: cover; background-image: url(powerwall.avif); height: 100vh;">
+        <center style="padding-top: 100px;">
+            <p style="width: 500px; font-style: 1; font-size: 40px; margin: 0%; font-weight: 550;">
+                Powerwall
+        </center>
+    </div>
+
+    <div style="background-size: cover; background-image: url(access.avif); height: 100vh;">
+        <center style="padding-top: 100px;">
+            <p style="width: 500px; font-style: 1; font-size: 40px; margin: 0%; font-weight: 550;">
+                Accessories
+        </center>
+    </div>
+
+</body>
+</html>3
